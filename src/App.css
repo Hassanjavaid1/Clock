@@ -1,0 +1,65 @@
+body{
+  background-color: #e4e4e4;;
+}
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: auto;
+  font-size: large;
+  font-family: sans-serif;
+}
+.break{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.break-session{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+.main-session-break{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.time{
+  text-align: center;
+    background: gainsboro;
+    box-shadow: 0rem 0rem 3rem 0px #808080d9;
+}
+#timer-label{
+  font-size: x-large;
+    text-transform: uppercase;
+
+}
+#time-left{
+  font-size: xxx-large;
+  font-family: math;
+}
+.icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .9rem;
+  font-size: x-large;
+}
+.time{
+  line-height: 1.5;
+  padding: 1.6rem;
+}
+#reset:active{
+  transform: rotate(340deg);
+  transition: visibility 1s ease, transform .6s ease;
+}
+.redClass{
+  color: red;
+}
+.default{
+  color: black;
+}
