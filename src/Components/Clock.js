@@ -7,7 +7,7 @@ import { BiReset } from "react-icons/bi";
 import alarm from "../Components/Ring-sound-effect.mp3"
 
 export default function Clock() {
-  const [minutes,setMinutes] = useState(1);
+  const [minutes,setMinutes] = useState(25);
   const [second,setSecond] = useState(0)
   const [isRunning,setisRunning] =useState(false)
   const [breakLength,setBreakLength] = useState(5)
@@ -27,26 +27,29 @@ export default function Clock() {
          if(minutes == 0){
           if(isSession){
             setIsSession(false)
-            setSecond(0)
            setMinutes(breakLength)
-          }else{
-            setIsSession(true)
-          setMinutes(25);
-        setSecond(0)
-        setisRunning(false)
-          }
-         }else{
+           setSecond(59)
+           }
+           else{
+             setIsSession(true)
+             setMinutes(25);
+             setSecond(0)
+             setisRunning(false)
+             }
+             }
+             else{
+           setBreakLength((preMin) => preMin - 1)
           setMinutes((prevMinutes) => prevMinutes - 1)
-          setBreakLength((prevBreak) => prevBreak - 1)
           setSecond(59)
           
          }
+         
        }else{
         setSecond((prevSecond) => prevSecond - 1)
        }
-    
      }
-     }, 100);
+     }, 1000);
+
      if(second <= 2 && minutes < 1){
        new Audio(alarm).play()
        }else if(second <= 59 && minutes < 1){
@@ -55,9 +58,10 @@ export default function Clock() {
      else{
       setRedClass('default')
      }
+
     return () => clearInterval(timer)
 
- },[isRunning,second,minutes,redClass,increment,breakLength,breakIncrement,isSession])
+ },[isRunning,second,minutes,redClass,increment,breakLength,breakIncrement,isSession,breakDecrement,breakIncrement])
 
 
 
