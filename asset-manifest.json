@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/Clock/static/css/main.17d09f68.css",
-    "main.js": "/Clock/static/js/main.91df1b4c.js",
+    "main.js": "/Clock/static/js/main.c4226365.js",
     "static/js/453.c54be771.chunk.js": "/Clock/static/js/453.c54be771.chunk.js",
     "static/media/Ring-sound-effect.mp3": "/Clock/static/media/Ring-sound-effect.68efcb7c0a998e5f0440.mp3",
     "index.html": "/Clock/index.html",
     "main.17d09f68.css.map": "/Clock/static/css/main.17d09f68.css.map",
-    "main.91df1b4c.js.map": "/Clock/static/js/main.91df1b4c.js.map",
+    "main.c4226365.js.map": "/Clock/static/js/main.c4226365.js.map",
     "453.c54be771.chunk.js.map": "/Clock/static/js/453.c54be771.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.17d09f68.css",
-    "static/js/main.91df1b4c.js"
+    "static/js/main.c4226365.js"
   ]
 }
